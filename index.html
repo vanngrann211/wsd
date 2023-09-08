@@ -6,12 +6,10 @@
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
     <!-- define your gltf asset -->
-    <a-assets>
-        <a-asset-item id="tree" src="scene.gltf"></a-asset-item>
-     </a-assets>
+    <a-box position='0 0.5 0' color='red'></a-box>
     <!-- use your gltf model -->
-    <a-entity gltf-model="##tree"></a-entity>
+
     <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    <a-marker-camera type="pattern" patternUrl="pattern-SM.patt"></a-marker-camera>
   </a-scene>
 </body>
