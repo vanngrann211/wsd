@@ -6,13 +6,22 @@
     <title>AR Project</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/aframe-extras@3.3.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    
+    <!-- import the webpage's stylesheet
+    <link rel="stylesheet" href="/style.css"> -->
+    
 </head>
 <body>
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
         <!-- Add your custom marker -->
         <a-marker type="pattern" url="marker/pattern-SM.patt">
             <!-- Add your GLB model -->
-            <a-entity gltf-model="url(assets/dino-model.glb)" scale="0.1 0.1 0.1"></a-entity>
+            <a-entity gltf-model="url(assets/dino-model.glb)" scale="0.3 0.3 0.3" animation-mixer></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
