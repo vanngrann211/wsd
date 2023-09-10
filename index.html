@@ -26,8 +26,10 @@
 
         <a-marker type="pattern" url="marker/pattern-LionBlack.patt">
           <!-- Add your GLB model -->
-          <a-entity gltf-model="url(assets/dragon__thera.glb)" scale="0.001 0.001 0.001" animation-mixer></a-entity>
+          <a-entity gltf-model="url(assets/dragon__thera.glb)" scale="0.007 0.007 0.007" animation-mixer></a-entity>
       </a-marker>
+      <a-light type="ambient" position="0 5 0"></a-light>
+        <a-light type="directional" position="3 5 -5" castShadow="true"></a-light>
         <a-entity camera></a-entity>
     </a-scene>
 </body>
