@@ -21,12 +21,12 @@
   <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
     <!--<a-sky src="assets/textures/beachM.jpg"></a-sky>-->
         <!-- Add your custom marker -->
-
+        <a-entity camera>
+            
+        </a-entity>
         <a-marker type="pattern" url="marker/pattern-SM.patt">
           <!-- Add your GLB model -->
-          <a-entity camera>
-            
-          </a-entity>
+
 
           <a-entity id="dino" gltf-model="url(assets/confetti.glb)" rotation="0 0 0" position="0 0 -10" scale="0.5 0.5 0.5" animation-mixer></a-entity>
       </a-marker>
